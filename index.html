@@ -20,12 +20,12 @@
     >
       <!-- home screen -->
       <section
-        class="home min-h-screen text-white flex justify-center items-center hidden"
+        class="home min-h-screen text-white flex justify-center items-center "
       >
         <div class="flex flex-col items-center gap-10">
           <h1 class="text-8xl uppercase font-extrabold">Alpha Clash Pro</h1>
           <p>Unlease Your Keyboard Kun g Fu : Press "Enter" to play</p>
-          <button class="btn bg-white text-black">Play Now</button>
+          <button onclick="play()" class="btn bg-white text-black">Play Now</button>
         </div>
       </section>
       <!-- playground start -->
@@ -120,8 +120,18 @@
  </div>
       </section>
       <!-- playground End -->
-
-      <section class="result"></section>
+      <!-- score  -->
+      <section class="result flex justify-center items-center min-h-screen hidden">
+        <div class="text-white text-center space-y-4 bg-[#FFFFFF33] p-4 rounded-lg">
+            <h1 class="text-8xl">
+                <span class="font-extrabold">Score:</span>
+                <span>14</span>
+            </h1>
+            <button class="btn">Play Again</button>
+            <p>Practice will make you a pro</p>
+        </div>
+      </section>
     </main>
+    <script src="script/alpha-case.js"></script>
   </body>
 </html>
